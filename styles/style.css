@@ -1,0 +1,323 @@
+/*RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*GOOGLE-FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap');
+/*font-family: "Noto Sans", sans-serif;*/
+
+/*VARIABLES
+
+:root{
+
+    --color-primary: #121212;
+    --color-secondary: #1E1E1E;
+    --color-accent: #C8A45D;
+    --color-text: #F5F5F5;
+    --color-text-secondary: #C7C7C7;
+
+    --font-title: 'Playfair Display', serif;
+    --font-text: 'Poppins', sans-serif;
+
+}*/
+
+/*BODY*/
+
+body {
+    background-color: #121212;
+    color: #F5F5F5;
+    line-height: 1.6;
+    margin: 0 16px;
+}
+
+/*TIPOGRAFIA*/
+
+h1 {
+    font-size: 2.5rem;
+    color: #C8A45D;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #C8A45D;
+    margin-bottom: 20px;
+
+}
+
+h3 {
+    color: #C8A45D;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    color: #C7C7C7;
+    margin-bottom: 15px;
+}
+
+/*HEADER*/
+
+.header {
+
+    background-color: #1E1E1E;
+    text-align: center;
+
+}
+
+header img {
+
+    width: 100px;
+    margin-top: 20px;
+
+}
+
+/*NAVBAR*/
+
+.navbar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    padding: 20px 40px;
+
+}
+
+nav ul {
+
+    display: flex;
+    list-style: none;
+    gap: 30px;
+
+}
+
+nav a {
+
+    text-decoration: none;
+    color: #C7C7C7;
+    font-weight: 500;
+
+}
+
+/*HERO*/
+.hero-section {
+  height: 260px;
+  background-image: url('../assets/img/hero.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-contenido h1 {
+  font-size: 1.8rem;
+  color: #C8A45D; 
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.hero-contenido .subtitulo {
+  font-size: 0.9rem;
+  color: #C7C7C7;
+}
+/*GRID-PRESENTATION*/
+
+.presentation {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "text-one"
+        "text-two"
+        "text-three";
+    gap: 20px;
+    background-color: #1E1E1E;
+    padding: 25px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+
+}
+
+.presentation-title {
+
+    grid-area: title;
+
+}
+
+.text-one {
+
+    grid-area: text-one;
+
+}
+
+.text-two {
+
+    grid-area: text-two;
+
+}
+
+.text-three {
+
+    grid-area: text-three;
+
+}
+
+/*GRID-BENFITS*/
+.benefits-grid {
+
+    display: grid;
+    grid-template-areas:
+        "benefits"
+        "card-one"
+        "card-two"
+        "card-three"
+        "card-four";
+    gap: 20px;
+    background-color: #1E1E1E;
+    padding: 25px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+
+}
+
+.benefits {
+
+    grid-area: benefits;
+
+}
+
+.card-one {
+
+    grid-area: card-one;
+
+}
+
+.card-two {
+
+    grid-area: card-two;
+
+}
+
+.card-three {
+
+    grid-area: card-three;
+
+}
+
+.card-four {
+
+    grid-area: card-four;
+
+}
+
+/*GRID-CARD*/
+.card {
+
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+/*GIRD-MENU*/
+.menu-grid {
+
+    display: grid;
+    grid-template-areas:
+        "entradas"
+        "principales"
+        "postres";
+    gap: 25px;
+    background-color: #1E1E1E;
+    padding: 25px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+
+}
+
+.entradas {
+
+    grid-area: entradas;
+
+}
+
+.principales {
+
+    grid-area: principales;
+
+}
+
+.postres {
+
+    grid-area: postres;
+
+}
+
+/*FOOTER*/
+footer {
+
+    background-color: #1E1E1E;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid #C8A45D;
+    border-bottom: 2px solid #C8A45D;
+    border-radius: 10px;
+}
+
+/*MEDIA-QUERIES*/
+
+/*TABLET*/
+@media(min-width:768px) {
+
+    .benefits-grid {
+        grid-template-areas:
+            "benefits benefits"
+            "card-one card-two"
+            "card-three card-four";
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: (2, 1fr);
+
+    }
+
+    .menu-grid {
+        grid-template-areas:
+            "entradas principales"
+            "postres postres";
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+/*DESKTOP*/
+
+@media(min-width:1024px) {
+
+    .benefits-grid {
+        grid-template-areas:
+            "benefits card-one card-three"
+            "benefits card-two card-four";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .menu-grid {
+        grid-template-areas:
+            "entradas principales postres";
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}

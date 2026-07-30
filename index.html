@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="./styles/style.css"><!--despues de boostrap-->
+    <title>Black Roaster Restaurant</title>
+</head>
+
+<body>
+    <!--ENCABEZADO-->
+    <header>
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg border-bottom border-body " data-bs-theme="dark">
+            <div class="container-fluid">
+                <img src="./assets/img/logo.png" alt="Logo de Black Roaster">
+                <a class="navbar-brand" href="./index.html">BLACK ROASTER</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/menu.html">Menú</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre nosotros</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/reservas.html">Reservas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <!--HERO-->
+    <section class="hero-section">
+        <div class="hero-contenido">
+            <h1>BLACK ROASTERS</h1>
+            <p class="subtitulo">Sabores auténticos, experiencias memorables.</p>
+        </div>
+    </section>
+
+    <!--PRINCIPAL-->
+    <main class="main">
+
+        <!--PRESENTACION-->
+        <article class="presentation">
+
+            <h2 class="presentation-title">
+                Bienvenidos a Black Roaster
+            </h2>
+
+            <p class="presentation-text text-one">
+                Un restaurante que combina la tradición de la cocina argentina con técnicas contemporáneas y productos
+                frescos de estación.
+            </p>
+
+            <p class="presentation-text text-two">
+                Nuestro objetivo es ofrecer una experiencia gastronómica cálida y cercana, donde cada plato refleje el
+                respeto por los ingredientes y la pasión por la cocina.
+            </p>
+
+            <p class="presentation-text text-three">
+                Desde entradas para compartir hasta postres elaborados artesanalmente, cada detalle está pensado para
+                que disfrutes de un momento único.
+            </p>
+
+        </article>
+
+        <!--CARRUSEL-->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/logo.png" class="d-block w-100" alt="poner texto">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/hero.png" class="d-block w-100" alt="poner texto">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/logo.png" class="d-block w-100" alt="poner texto">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--PORQUE-ELEGIRNOS-->
+        <div class="benefits-grid">
+
+            <section class="benefits">
+                <h2>
+                    ¿Por qué elegirnos?
+                </h2>
+            </section>
+
+            <section class="card card-one">
+
+                <h3>
+                    Ingredientes frescos
+                </h3>
+
+                <p>
+                    Seleccionamos productos de calidad para cada preparación.
+                </p>
+
+            </section>
+
+            <section class="card card-two">
+
+                <h3>
+                    Cocina argentina
+                </h3>
+
+                <p>
+                    Tradición y técnicas contemporaneas en cada plato.
+                </p>
+
+            </section>
+
+            <section class="card card-three">
+
+                <h3>
+                    Ambiente moderno
+                </h3>
+
+                <p>
+                    Un espacio diseñado para disfrutar.
+                </p>
+
+            </section>
+
+            <section class="card card-four">
+                <h3>
+                    Atención personalizada
+                </h3>
+
+                <p>
+                    Cada cliente vive una experiencia única.
+                </p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>
+            © 2026 Black Roaster. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
